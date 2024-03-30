@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .typing-text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    overflow: hidden; /* Ensure the typing animation stays inside the box */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: .15em solid orange; /* Typing cursor effect */
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
